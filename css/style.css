@@ -875,7 +875,7 @@ img {
 .wrap-footer-item {
   display: block;
   margin-right: 30px;
-  flex-basis: calc((50% - 45px) / 3);
+  /* flex-basis: calc((50% - 45px) / 3); */
 }
 
 .footer {
