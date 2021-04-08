@@ -1032,6 +1032,7 @@ img {
   display: flex;
   flex-direction: column;
   margin-bottom: 20px;
+
 }
 
 textarea {
@@ -1067,11 +1068,22 @@ textarea {
 }
 
 .modal-form-policy {
-  text-align: center;
+  display: flex;
+  align-items: baseline;
+}
+
+
+.modal-input-policy{
+	margin-right: 8px;
+}
+
+.modal-button{
+	display: flex;
+    justify-content: center;
 }
 
 .btn-modal-button {
-  font-family: "Roboto" serif;
+  font-family: "Roboto", serif;
   font-size: 16px;
   font-weight: 700;
   line-height: 1.87;
@@ -1106,6 +1118,7 @@ textarea {
   letter-spacing: 0.03em;
   text-decoration-line: underline;
   color: var(--primary-color);
+  margin-left: 3px;
 
   transition-property: background-color;
   transition-duration: 250ms;
@@ -1117,3 +1130,5 @@ textarea {
   text-decoration-line: underline;
   color: var(--hover-color);
 }
+
+
