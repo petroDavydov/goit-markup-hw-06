@@ -1032,6 +1032,7 @@ img {
   display: flex;
   flex-direction: column;
   margin-bottom: 20px;
+  position: relative;
 
 }
 
@@ -1047,11 +1048,18 @@ textarea {
 }
 
 .modal-lable {
-  margin-bottom: 4px;
+	position: absolute;
+	top: 50%;
+	left: 30px;
+	
+  /* margin-bottom: 4px; */
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.01em;
   color: var(--modal-color);
+
+  transform: translateY(-50%);
+  transition: transform 250ms linear;
 }
 
 .comment-mod {
@@ -1129,6 +1137,12 @@ textarea {
 .social-link:focus {
   text-decoration-line: underline;
   color: var(--hover-color);
+}
+
+
+.modal-input:focus + .modal-lable{
+	transform: translate(-25px, -35px);
+	color: red;
 }
 
 
