@@ -1010,24 +1010,20 @@ img {
   top: 5px;
   cursor: pointer;
   width: 18px;
-  height: 18px;  
+  height: 18px;
 }
 
 /*! почему не пойму не работает  */
 
-.modal-slogan-close:hover .close-icon, 
+.modal-slogan-close:hover .close-icon,
 .modal-slogan-close:focus .close-icon {
-	fill: var(--hover-color);
+  fill: var(--hover-color);
 }
 /* ! ! ! ! ! */
 
 /* close-icon end */
 
 /* modal-form */
-
-
-
-
 
 .modal-title {
   font-size: 20px;
@@ -1055,8 +1051,6 @@ img {
 
 /* === */
 
-
-
 /* === */
 
 .modal-unit-input {
@@ -1073,11 +1067,10 @@ img {
   transition-property: border;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
 }
 /*! === */
-.modal-unit-input:focus{
-	border:  1px solid var(--hover-color);
+.modal-unit-input:focus {
+  border: 1px solid var(--hover-color);
 }
 /*! === */
 
@@ -1089,18 +1082,41 @@ img {
   position: relative;
 }
 
+/* ================================ */
 .modal-checkbox-policy {
   letter-spacing: 0.03em;
   color: var(--paragraph-color);
-  display: flex;
-  justify-content: space-around;
+  display: flex; 
   align-items: baseline;
 }
 
 .modal-checkbox {
-  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position: absolute;
 }
 
+.checkbox-icon-span {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin-right: 7px;
+  background-color: inherit;
+  border: 2px solid #000;
+  border-radius: 4px;
+}
+
+.modal-checkbox:checked + .checkbox-icon-span {
+  background-image: url("../images/icon-check.svg");
+  background-size: contain;
+  background-origin: border-box;
+
+  border: 2px solid var(--social-hover-color);
+  background-color: var(--social-hover-color);
+}
+
+/* =========================================== */
 .modal-link {
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -1210,4 +1226,3 @@ img {
 }
 
 /* icon in modal end */
-
