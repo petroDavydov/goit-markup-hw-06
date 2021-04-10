@@ -1001,8 +1001,8 @@ img {
 /* close icon */
 .modal-slogan-close {
   position: absolute;
-  right: 14px;
-  top: 14px;
+  right: 8px;
+  top: 8px;
   width: 30px;
   height: 30px;
   border-radius: 50%;
@@ -1011,7 +1011,7 @@ img {
   align-items: center;
 
   border: 1px solid rgba(0, 0, 0, 0.1);
-  background: none;
+  
 
   transition-property: fill, color;
   transition-duration: 250ms;
@@ -1020,8 +1020,6 @@ img {
 
 .close-icon {
   position: absolute;
-  left: 5px;
-  top: 5px;
   cursor: pointer;
   width: 18px;
   height: 18px;
@@ -1029,10 +1027,16 @@ img {
 
 /*! почему не пойму не работает  */
 
-.modal-slogan-close:hover .close-icon,
-.modal-slogan-close:focus .close-icon {
+.modal-slogan-close:hover > .close-icon,
+.modal-slogan-close:focus > .close-icon {
   fill: var(--hover-color);
 }
+
+.close-icon:hover{
+	fill: var(--hover-color);
+}
+
+
 
 /* ! ! ! ! ! */
 
