@@ -1027,8 +1027,8 @@ img {
 
 /*! почему не пойму не работает  */
 
-.modal-slogan-close:hover > .close-icon,
-.modal-slogan-close:focus > .close-icon {
+.modal-slogan-close:hover .close-icon,
+.modal-slogan-close:focus .close-icon {
   fill: var(--hover-color);
 }
 
