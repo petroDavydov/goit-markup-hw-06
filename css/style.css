@@ -1091,6 +1091,8 @@ img {
   margin-top: 5px;
   cursor: pointer;
   position: relative;
+  border: 1px solid var(--modal-color-border);
+  border-radius: 4px;
 }
 
 /* ================================ */
