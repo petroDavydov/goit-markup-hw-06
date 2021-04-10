@@ -1011,7 +1011,7 @@ img {
   align-items: center;
 
   border: 1px solid rgba(0, 0, 0, 0.1);
-  
+  background: none;
 
   transition-property: fill, color;
   transition-duration: 250ms;
@@ -1032,11 +1032,9 @@ img {
   fill: var(--hover-color);
 }
 
-.close-icon:hover{
-	fill: var(--hover-color);
+.close-icon:hover {
+  fill: var(--hover-color);
 }
-
-
 
 /* ! ! ! ! ! */
 
