@@ -1080,7 +1080,6 @@ img {
   border: 1px solid var(--hover-color);
 }
 
-
 .user-comment {
   padding: 12px 16px;
   resize: none;
@@ -1206,11 +1205,9 @@ img {
   border: 1px solid var(--social-hover-color);
 }
 
-
 .user-comment textarea::placeholder {
-	color: rgba(117, 117, 117, 0.5);
-  }
-  
+  color: rgba(117, 117, 117, 0.5);
+}
 
 /* textaria mark up */
 
