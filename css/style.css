@@ -1023,6 +1023,10 @@ img {
   cursor: pointer;
   width: 18px;
   height: 18px;
+
+  transition-property: fill;
+  transition-duration: 150ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-slogan-close:hover .close-icon,
@@ -1070,12 +1074,12 @@ img {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-/*! === */
+
 .modal-unit-input:focus,
 .modal-unit-input:hover {
   border: 1px solid var(--hover-color);
 }
-/*! === */
+
 
 .user-comment {
   padding: 12px 16px;
@@ -1201,6 +1205,12 @@ img {
 .user-comment:hover {
   border: 1px solid var(--social-hover-color);
 }
+
+
+.user-comment textarea::placeholder {
+	color: rgba(117, 117, 117, 0.5);
+  }
+  
 
 /* textaria mark up */
 
